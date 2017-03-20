@@ -131,6 +131,7 @@ header {
     color: #fff !important;
     z-index: 2;
     font-family: 'Viga', sans-serif;
+    overflow: hidden;
 }
 
 footer {
