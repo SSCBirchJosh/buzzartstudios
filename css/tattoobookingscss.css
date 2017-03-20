@@ -171,7 +171,7 @@ input[type=time]:focus {
 .formtitle {
     padding-top: 15px;
     color: white;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
     padding-bottom: 10px;
     font-size: 54px;
     width: 100%;
@@ -180,8 +180,7 @@ input[type=time]:focus {
 }
 
 label {
-    color: white;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
     font-size: 16px;
 }
 
@@ -194,7 +193,7 @@ label {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     outline: none;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
     font-size: 36px;
     color: #111;
     background-color: white;
@@ -224,7 +223,7 @@ footer {
     float: none;
     bottom: 0;
     width: 100%;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
     font-size: 16px;
     font-style: bold;
     color: #FFFFFF;
