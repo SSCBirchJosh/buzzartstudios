@@ -26,7 +26,7 @@ header {
     position: relative;
     color: RGB(56,51,50);
     background-color: transparent;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
     font-size: 54px;
     text-align: center;
     padding: 10px;
@@ -48,7 +48,7 @@ header {
     transition: 0.5s;
     padding-top: 60px;
     text-align: center;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
 }
 
 .menu-logo {
@@ -112,7 +112,7 @@ header {
     color: #FFFFFF;
     background-color: RGB(56,51,50);
     border-color: #000000;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
 }
 
 .panel-title {
@@ -144,7 +144,7 @@ footer {
     float: none;
     bottom: 0;
     width: 100%;
-    font-family: "Lovelo Black";
+    font-family: 'Viga', sans-serif;
     font-size: 0.4vm;
     font-style: bold;
     color: RGB(56,51,50);
