@@ -5,8 +5,8 @@ body {
 }
 
 .sidenav {
-    position: absolute;
-    height: 100%;
+    position: fixed;
+    height: 125%;
     width: 0;
     z-index: 2;
     top: 0;
