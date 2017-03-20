@@ -72,9 +72,9 @@ body {
     
 }
 
-@media screen and (max-height: 568px) {
+@media screen and (max-width: 568px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 8px;}
+    .sidenav a {font-size: 10px;}
     
 }
 
