@@ -52,7 +52,6 @@ body {
     color: #FFFFFF;
     display: block;
     transition: 0.3s;
-    overflow-y: scroll;
 }
 
 .sidenav a:hover {
@@ -73,11 +72,6 @@ body {
     
 }
 
-@media screen and (max-width: 568px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 10px;}
-    
-}
 
 .sidenav a.active {
     color: #818181;
