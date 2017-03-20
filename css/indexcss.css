@@ -30,6 +30,9 @@ body {
     .menu-logo {
         padding-left: 25px;
     }
+    
+    .sidenav {
+        overflow-y: scroll;
 }
 
 .openbtn {
