@@ -50,6 +50,7 @@ body {
     color: #FFFFFF;
     display: block;
     transition: 0.3s;
+    overflow-y: scroll;
 }
 
 .sidenav a:hover {
