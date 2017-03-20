@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>About Us</title>
+    
+    <meta name="viewport" content="width =device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="70x70" href="assets/ms-icon-70x70.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/aboutcss.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url("assets/aboutbg.jpg");
+            background-repeat: no-repeat fixed 100% 100%;
+            background-attachment: fixed;
+            width: 100%;
+            height: auto;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+    
+</head>
+    
+<body>
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <header>About Us</header>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img class="menu-logo" src="assets/buzzlogo3trans.png">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="tattoobookings.html" target="_blank">Tattoo Bookings</a>
+        <a href="artists.html" target="_blank">Artists</a>
+        <a href="tattoodesign.html" target="_blank">Tattoo Designs</a>
+        <a href="#" class="active">About</a>
+        <a href="faq.html" target="_blank">FAQ</a>
+    </div>
+    
+    
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Buzzart Studios</h4>
+                        <p>Welcome to our studio! We are a small tattoo and piercing studio based in Staffordshire, England. We pride in authentic and professional design within our tattooing sector, contrasting with the expert piercing service that we provide to customers.</p>
+                    </div>
+                    <img src="assets/panelimg1.jpeg" width="600" height="600">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Our Image</h4>
+                        <p>As mentioned, we are authentic. Which means that we like things to be a abstract. If your looking for tattoo designs like this, then look no further. We have fantastic artists ready to sit down with you and get to know your personality and, more importantly, what design YOU would like. You can check them out in the ARTISTS tab in the menu!</p>
+                    </div>
+                    <img src="assets/panelimg2.jpeg" width="600" height="600">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4 id="address-heading">Where To Find Us</h4>
+                        <div id="buzzartlogo">
+                            <img src="assets/buzzlogo3trans.png">
+                        </div>
+                        <p id="address">The Green<br>Cannock<br>Staffordshire<br>WS11 1UE<br><br>Tel: 01922 123456<br>Email: buzzartcontact@buzzart.co.uk</p>
+                    </div>
+                    <img src="assets/tattooman.jpeg" width="600" height="600">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h4>Social Media Links</h4>
+                            <br>
+                            <br>
+                            <a href="#" target="_blank"><img class="socialmedia" src="assets/facebook.png" width="100px" height="100px"></a>
+                            <a href="#" target="_blank"><img class="socialmedia" src="assets/twitter.png" width="100px" height="100px"></a>
+                            <a href="#" target="_blank"><img class="socialmedia" src="assets/instagram.png" width="100px" height="100px"></a>
+                            <a href="#" target="_blank"><img class="socialmedia" src="assets/linkedin.png" width="100px" height="100px"></a>
+                    </div>
+                    <img src="assets/tattooman2.jpg" width="600" height="600">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $("[rel='tooltip']").tooltip();
+            
+            $('.thumbnail').hover(
+                function() {
+                    $(this).find('.caption').slideDown(250);
+                },
+                function(){
+                    $(this).find('.caption').slideUp(250);
+                }
+            );
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            $("body").fadeIn();
+        });
+    </script>
+    
+    <footer>©Buzzart Studios. Website Built By Joshua Birch</footer>
+    
+</body>
+</html>

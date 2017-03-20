@@ -1,0 +1,253 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+body {
+    display: none;
+    margin-bottom: 100px;
+}
+
+header {
+    color: white;
+    background-color: transparent;
+    font-family: 'Viga', sans-serif;
+    font-size: 54px;;
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+    text-shadow: 0 0 6px RGB(56,51,50);
+    width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: rgb(56,51,50);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+.menu-logo {
+    padding-left: 50px;
+}
+
+.openbtn {
+    position: fixed;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    left: 2%;
+    top: 2%;
+    z-index: 2;
+    text-shadow: 0 0 6px RGB(56,51,50);
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav a.active {
+    color: #818181;
+}
+
+.carousel {
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    
+}
+
+.carousel-control.left {
+    background: none;
+}
+
+.carousel-control.right {
+    background: none;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 45%;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: auto;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    text-shadow: none;}
+}
+
+.carousel-control:hover {
+    color: #000;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: RGB(56,51,50);
+}
+
+.carouselheading {
+    font-family: 'Viga', sans-serif;
+}
+
+.carousel-caption {
+    font-family: 'Viga', sans-serif;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+}
+
+.panel {
+    border: 0;
+}
+
+.panel panel-default { 
+    border: 0;
+    padding: 16px;
+    margin: 20px;
+}
+
+.ytheading {
+    color: white;
+    font-family: 'Viga', sans-serif;
+    font-size: 48px;
+    text-shadow: 0 0 10px #111;
+}
+
+.panel-body {
+    border: 0;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    font-family: 'Viga', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: RGB(56,51,50);
+    text-shadow: 0 0 10px #111;
+}
+
+.thumbnail {
+    margin-top: 10px;
+    padding: 0;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    filter: none;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+
+footer {
+    position: absolute;
+    padding-left: 4px;
+    clear: both;
+    z-index: 0;
+    height: 3em;
+    background-color: rgba(0,0,0,0);
+    text-align:center;
+    float: none;
+    bottom: 0%;
+    width: 100%;
+    font-family: 'Viga', sans-serif;
+    font-size: 0.4vm;
+    font-style: bold;
+    color: #FFFFFF;
+    text-shadow: 0 0 6px RGB(56,51,50);
+}
+

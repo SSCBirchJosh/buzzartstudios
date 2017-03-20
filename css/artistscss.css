@@ -1,0 +1,209 @@
+html {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(photos/2452.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    display:none;
+    margin-bottom: 200px;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    color: white;
+    background-color: transparent;
+    font-family: 'Viga', sans-serif;
+    font-size: 54px;
+    text-align: center;
+    padding: 10px;
+    z-index: 0;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px RGB(56,51,50);
+}
+
+.openbtn {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    left: 1%;
+    top: 2%;
+    z-index: 1;
+    text-shadow: 0 0 6px RGB(56,51,50);
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: RGB(56,51,50);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+.menu-logo {
+    padding-left: 50px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a.active {
+    color: #818181;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.title {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.panel panel-default {
+    padding: 0;
+    border: none;
+    border-radius: 0px;
+}
+
+.panel.noborder {
+    border: none;
+    box-shadow: none;
+}
+
+.panel-heading {
+    font-family: 'Viga', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #383332;
+}
+
+.panel-text {
+    font-family: "Bookman Old Style";
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+    margin: 5px;
+    
+}
+
+#column {
+    margin-bottom: 16px;
+
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container:after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: :grey;
+}
+
+.button {
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 8px;
+    color: white;
+    background-color: RGB(56,51,50);
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.headings {
+    font-family: 'Viga', sans-serif;
+    color: rgb (56,51,50);
+}
+
+.socialmedia-hover {
+    opacity: 1.0;
+}
+
+.socialmedia-hover:hover {
+    opacity: 0.75;
+}
+
+footer {
+    padding-left: 4px;
+    clear: both;
+    z-index: 0;
+    height: 3em;
+    background-color: rgba(0,0,0,0);
+    text-align:center;
+    float: none;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Viga', sans-serif;
+    font-size: 0.4vm;
+    font-style: bold;
+    color: white;
+    text-shadow: 0 0 1px #FFFFFF;
+    position: absolute;
+}

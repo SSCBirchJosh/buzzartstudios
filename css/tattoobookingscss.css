@@ -1,0 +1,234 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+
+body {
+    display: none;
+    margin-bottom: 100px;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(56,51,50);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+.menu-logo {
+    padding-left: 50px;
+}
+
+.openbtn {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    left: 2%;
+    top: 2%;
+    z-index: 1;
+    text-shadow: 0 0 6px #111;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav a.active {
+    color: #818181;
+}
+
+
+
+.panel-default {
+    background-color: RGB(56,51,50);  
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.75);
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    margin-top: 0;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: black;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: black;
+}
+
+input[type=time] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: black;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color: black;
+    
+   
+}
+
+textarea:focus {
+    border: 3px solid #999;
+}
+
+input[type=text]:focus {
+    border: 3px solid #999;
+}
+
+input[type=date]:focus {
+    border: 3px solid #999;
+}
+
+input[type=time]:focus {
+    border: 3px solid #999;
+}
+
+.formtitle {
+    padding-top: 15px;
+    color: white;
+    font-family: "Lovelo Black";
+    padding-bottom: 10px;
+    font-size: 54px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+label {
+    color: white;
+    font-family: "Lovelo Black";
+    font-size: 16px;
+}
+
+.submitbutton {
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-family: "Lovelo Black";
+    font-size: 36px;
+    color: #111;
+    background-color: white;
+}
+
+.submitbutton:hover {
+    border: 3px solid #999;
+}
+
+.modal-title {
+    font-family: "Lovelo Black";
+    font-size: 5vh;
+    text-align: center;
+}
+
+.modal-body {
+    font-family: "Bookman Old Style";
+}
+
+footer {
+    padding-left: 20px;
+    clear: both;
+    z-index: 0;
+    height: 3em;
+    background-color: rgba(0,0,0,0);
+    text-align:center;
+    float: none;
+    bottom: 0;
+    width: 100%;
+    font-family: "Lovelo Black";
+    font-size: 16px;
+    font-style: bold;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px #111;
+    position: absolute;
+}
+

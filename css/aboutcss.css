@@ -1,0 +1,154 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+
+body {
+    display: none;
+    margin-bottom: 200px;
+}
+
+header {
+    position: relative;
+    color: white;
+    font-family: 'Viga', sans-serif;
+    font-size: 54px;
+    text-align: center;
+    padding: 10px;
+    z-index: 0;
+    text-shadow: 0 0 10px RGB(56,51,50);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(56,51,50);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+.menu-logo {
+    padding-left: 50px;
+}
+
+.openbtn {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    left: 2%;
+    top: 2%;
+    z-index: 1;
+    text-shadow: 0 0 6px RGB(56,51,50);
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav a.active {
+    color: #818181;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+
+
+.row {
+    padding: 0;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    right:0;
+    background: rgba(56,51,50,0.75);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: none;
+    text-align: center;
+    color: #fff !important;
+    z-index: 2;
+    font-family: 'Viga', sans-serif;
+}
+
+footer {
+    clear: both;
+    z-index: 0;
+    height: 3em;
+    background-color: rgba(0,0,0,0);
+    text-align:center;
+    float: none;
+    font-family: 'Viga', sans-serif;
+    font-size: 0.4vm;
+    font-style: bold;
+    color: white;
+    text-shadow: 0 0 1px #FFFFFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}

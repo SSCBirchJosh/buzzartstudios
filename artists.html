@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Artists</title>
+    
+    <meta name="viewport" content="width =device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="70x70" href="assets/ms-icon-70x70.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/artistscss.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url("assets/fog.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            width: 100%;
+            height: auto;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+    
+</head>
+    
+<body>
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
+    <header>Meet The Team!</header>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img class="menu-logo" src="assets/buzzlogo3trans.png">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="tattoobookings.html" target="_blank">Tattoo Bookings</a>
+        <a href="#" class="active">Artists</a>
+        <a href="tattoodesign.html" target="_blank">Tattoo Designs</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="faq.html" target="_blank">FAQ</a>
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
+    
+    <div class="panel panel-default noborder">
+        <div class="panel-body">
+            <div class="container">
+                <h2 class="panel-heading">Great things in business are never done by one person. They're done by a team of people. - Steve Jobs</h2>
+                <p class="panel-text">Here at Buzzart Studios, we pride in having quality relationships with not only our customers but also with each other. Our team is like no other, especially when they're around each other 24/7. Our team are motivated, determined and embrace the the theme and message of Buzzart. With full qualifications and experience, you can expect a quality tattoo for a quality price. Book a consultation through the "Tattoo Bookings" tab to meet with one of our designers/artists about your next tattoo. You can also contact them personally through the contact buttons below on their professional email, please bare in mind that a reply is not guarenteed due to time restrictions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/designer1.png" alt="..." style="width:100%">
+                    <div class="container">
+                        <h2 class="headings">James Kelly</h2>
+                        <p class="title">Lead Designer</p>
+                        <p>kellyjames@buzzart.co.uk</p>
+                        <p><button class="button">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/designer2.png" alt="..." style="width:100%">
+                    <div class="container">
+                        <h2 class="headings">Chris Adams</h2>
+                        <p class="title">Co-Designer</p>
+                        <p>adamschris@buzzart.co.uk</p>
+                        <p><button class="button">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/tattooist1.png" alt="..." style="width:100%">
+                    <div class="container">
+                        <h2 class="headings">Brendon Glenn</h2>
+                        <p class="title">Lead Tattooist</p>
+                        <p>glennbrendon@buzzart.co.uk</p>
+                        <p><button class="button">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/tattooist.jpg" alt="..." style="width:100%">
+                    <div class="container">
+                        <h2 class="headings">Ollie Nicholson</h2>
+                        <p class="title">Tattooist</p>
+                        <p>nicholsonollie@buzzart.co.uk</p>
+                        <p><button class="button">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/piercer2.png" alt="..." style="width:100%">
+                    <div class="container">
+                        <h2 class="headings">Caylee Mcintyre</h2>
+                        <p class="title">Lead Piercer</p>
+                        <p>mcintyrecaylee@buzzart.co.uk</p>
+                        <p><button class="button">Contact</button>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/piercer1.png" alt="..." style="width:100%">
+                    <div class="container">
+                        <h2 class="headings">Mia Anderson</h2>
+                        <p class="title">Piercing Assistant</p>
+                        <p>andersonmia@buzzart.co.uk</p>
+                        <p><button class="button">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $("body").fadeIn();
+        });
+    </script>
+    
+    <footer>©Buzzart Studios. Website Built By Joshua Birch</footer>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+body {
+    display: none;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+}
+
+
+header {
+    position: relative;
+    color: RGB(56,51,50);
+    background-color: transparent;
+    font-family: "Lovelo Black";
+    font-size: 54px;
+    text-align: center;
+    padding: 10px;
+    z-index: 0;
+    margin-bottom: 50px;
+    text-shadow: 0 0 6px #111;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(56,51,50);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: "Lovelo Black";
+}
+
+.menu-logo {
+    padding-left: 50px;
+}
+
+.openbtn {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    color: RGB(56,51,50);
+    left: 2%;
+    top: 2%;
+    z-index: 1;
+    text-shadow: 0 0 4px #111;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav a.active {
+    color: #818181;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: 0 0 4px #111;
+    border-color: RGB(56,51,50);
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    background-color: RGB(56,51,50);
+    border-color: #000000;
+    font-family: "Lovelo Black";
+}
+
+.panel-title {
+    font-size: 36px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.more-less {
+    float: right;
+    color: #FFFFFF;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+
+footer {
+    padding-left: 4px;
+    clear: both;
+    z-index: 0;
+    height: 3em;
+    background-color: rgba(0,0,0,0);
+    text-align:center;
+    float: none;
+    bottom: 0;
+    width: 100%;
+    font-family: "Lovelo Black";
+    font-size: 0.4vm;
+    font-style: bold;
+    color: RGB(56,51,50);
+    text-shadow: 0 0 4px #111;
+    position: absolute;
+}
+

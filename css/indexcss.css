@@ -1,0 +1,110 @@
+
+body {
+    display: none;
+    padding-bottom: 80px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(56,51,50);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Viga', sans-serif;
+}
+
+.menu-logo {
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 320px) {
+    
+    .menu-logo {
+        padding-left: 25px;
+    }
+}
+
+.openbtn {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    left: 2%;
+    top: 2%;
+    z-index: 1;
+    text-shadow: 0 0 6px RGB(56,51,50);
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidenav a.active {
+    color: #818181;
+}
+
+
+.logo {
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+}
+
+.fade {
+    opacity: 1.0;
+}
+
+.fade:hover {
+    opacity: 0.5;
+}
+
+footer {
+    clear: both;
+    z-index: 0;
+    height: 3em;
+    background-color: rgba(0,0,0,0);
+    text-align:center;
+    float: none;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Viga', sans-serif;
+    font-size: 0.4vm;
+    font-style: bold;
+    color: white;
+    text-shadow: 0 0 1px #FFFFFF;
+    position: absolute;
+}
+
