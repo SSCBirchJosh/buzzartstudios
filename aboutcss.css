@@ -110,6 +110,8 @@ header {
 .thumbnail {
     position: relative;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     z-index: 0;
     padding: 0;
     border: none;
@@ -132,6 +134,8 @@ header {
     z-index: 2;
     font-family: 'Viga', sans-serif;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 footer {
