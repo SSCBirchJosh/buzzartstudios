@@ -2,6 +2,7 @@
 body {
     display: none;
     padding-bottom: 80px;
+    overflow-y: hidden;
 }
 
 .sidenav {
@@ -32,6 +33,7 @@ body {
 }
 
 .openbtn {
+    overflow: hidden;
     position: absolute;
     font-size: 30px;
     cursor: pointer;
