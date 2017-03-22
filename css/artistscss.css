@@ -107,6 +107,10 @@ header {
     height: auto;
 }
 
+.panel {
+    border: 0;
+}
+
 .panel panel-default {
     padding: 0;
     border: none;
